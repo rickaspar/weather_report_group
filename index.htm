@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Dashboard</title>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+    <div class="rounded-container"> 
+        <div class="title-header">
+            <img src="./assets/images/weather_logo.png" alt="weather">
+            <h1>5-Day  Forecast: Your Local Guide</h1>
+        </div>
+        <div class="container-info">
+            <div class="getlocationText">
+                <h3>Type in your location:</h3>
+            </div>
+            <div class="getLocationInput">
+                <input type="text" id="city" placeholder="Enter city name" required>
+            </div>
+            <div class="getButtonInput">
+                <button id="getWeather">find your city's forecast</button>
+            </div>
+        </div>
+        <div class="section-divider-horiz"></div>
+        <br>
+        <div id="errorTextHere" class="errorTextHere">
+            Error Here
+        </div>
+        <div id="detailForCity" class="detail-for-city">
+            <div class="city-card" id="cityCard"></div>
+        </div>
+        <br>
+        <div class="weather-dashboard">
+            <div id="weatherResult" class="weather-result">
+                <div class="weather-cards" id="WeatherResult0"></div>
+                <div class="weather-cards" id="WeatherResult1"></div>
+                <div class="weather-cards" id="WeatherResult2"></div>
+                <div class="weather-cards" id="WeatherResult3"></div>
+                <div class="weather-cards" id="WeatherResult4"></div>
+            </div>
+
+            <!-- detail panels-->
+            <div id="weatherDetailsContainer" class="weather-details-container">
+                <div class="weather-details" id="WeatherDetail0" style="display:none;"></div>
+                <div class="weather-details" id="WeatherDetail1" style="display:none;"></div>
+                <div class="weather-details" id="WeatherDetail2" style="display:none;"></div>
+                <div class="weather-details" id="WeatherDetail3" style="display:none;"></div>
+                <div class="weather-details" id="WeatherDetail4" style="display:none;"></div>
+            </div>
+        </div>
+    </div>
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>
